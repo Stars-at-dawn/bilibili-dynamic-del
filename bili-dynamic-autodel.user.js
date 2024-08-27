@@ -389,7 +389,7 @@
             }
             if (mode == 'days_ago') {
                 input = prompt('请输入想要删除多少天前的动态 (整数即可) :');
-                if (!isNaN(input)) {
+                if (isNaN(input)) {
                     sendNotification('输入错误！')
                     return false;
                 }
